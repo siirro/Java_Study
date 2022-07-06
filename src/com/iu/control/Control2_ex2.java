@@ -17,6 +17,7 @@ public class Control2_ex2 {
 		
 		if(num==1) {
 			ch = (char)(ch+num);
+			//ch += 1
 		} else if(num==2) {
 			ch = (char)(ch+num);
 		} else if(num==3) {
