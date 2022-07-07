@@ -33,7 +33,7 @@ public class Control2_ex2 {
 		
 		System.out.println(ch);
 		
-		
+		//집에서 추가했어요
 
 	}
 
