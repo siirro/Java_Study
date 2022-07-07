@@ -34,9 +34,9 @@ public class Control2_ex2 {
 		
 		System.out.println(ch);
 		
+
 		//Study Edition
-		
-		
+		//집에서 추가했어요ㅇㅇ
 
 	}
 
