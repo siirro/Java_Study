@@ -15,6 +15,8 @@ public class Control2_ex2 {
 		char ch = sc.next().charAt(0);
 		
 		
+		//소문자가 범위를 벗어났을때
+		
 		if(num==1) {
 			ch = (char)(ch+num);
 			//ch += 1
@@ -29,6 +31,18 @@ public class Control2_ex2 {
 		}
 		
 		if(ch>=122) {
+			ch -= 26;
+		}
+		
+		//result = (char)ch+num;
+		//if(result>'z') {
+		//result = result - 'z'-1; 
+		//result = 'a'+result;+
+		
+		//대문자가 범위를 벗어났을대
+		
+		
+		if(ch>=90&&ch<97) {
 			ch -= 26;
 		}
 		
