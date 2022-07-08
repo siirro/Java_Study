@@ -28,7 +28,7 @@ public class Loop4_ex1 {
 				if(m1==m&&s1==s) {
 					//flag=!flag;
 					m=60;
-					break; 
+					break;
 					
 				
 				}
