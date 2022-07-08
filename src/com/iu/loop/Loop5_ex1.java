@@ -14,17 +14,33 @@ public class Loop5_ex1 {
 		boolean check = true;
 		
 		while(check) {
-			System.out.println("id입력");
-			int id = sc.nextInt();			
-			System.out.println("pw입력");
-			int pw = sc.nextInt();	
+			System.out.println("1.로그인");
+			System.out.println("2.종 료");
+			int select = sc.nextInt();
 			
-			if(yid==id&&ypw==pw) {
-				System.out.println("로그인성공");
+			switch(select) {
+			case 1:
+				System.out.println("id입력");
+				int id = sc.nextInt();			
+				System.out.println("pw입력");
+				int pw = sc.nextInt();	
+				
+				if(yid==id&&ypw==pw) {
+					System.out.println("로그인성공");
+					check=!check;
+				} else {
+				System.out.println("로그인실패");
+				}
 				break;
-			} 
-			System.out.println("로그인실패");
-			//"글쿤"
+			case 2:
+				check=!check;
+				System.out.println("종료");
+				break;
+				
+			}
+				
+				
+			
 		}
 		
 	}
