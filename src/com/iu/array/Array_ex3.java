@@ -94,20 +94,75 @@ public class Array_ex3 {
 				System.out.println("삭제할 학생의 번호를 입력해주세요");
 				int delete = sc.nextInt();
 				
-				for(int i=0;i<nums;i++) {
+				String [] nameCopy = null;
+				int [] numberCopy = null;
+				int [] score_KorCopy = null;
+				int [] score_EngCopy = null;
+				int [] score_MathCopy = null;
+				int [] score_totalCopy = null;
+				double [] score_avgCopy = null;
+				
+				boolean flag = false;
+				int i = 0;
+				for(i=0;i<nums;i++) {
 					if(number[i]==delete) {
-						
-						
-					} else {
-						System.out.println("없는 번호입니다");
-					}
+						flag=!flag;
+						break;
+					} 
+					
 				}
 				
+				if(flag) {
+					nameCopy = new String [name.length-1];
+					numberCopy = new int [name.length-1];
+					score_KorCopy = new int [name.length-1];
+					score_EngCopy = new int [name.length-1];
+					score_MathCopy = new int [name.length-1];
+					score_totalCopy = new int [name.length-1];
+					score_avgCopy = new double [name.length-1];
+					int index=0;
+					for(int j=0;j<name.length;j++) {
+						if(j==i) {
+							//index--;
+							continue;
+						}
+						nameCopy[index]=name[i];
+						numberCopy[index]=number[i];
+						score_KorCopy[index]=score_Kor[i];
+						score_EngCopy[index]=score_Eng[i];
+						score_MathCopy[index]=score_Math[i];
+						score_totalCopy[index]=score_total[i];
+						score_avgCopy[index]=score_avg[i];
+						index++;
+							
+					
+					}
+					name=nameCopy;
+					number=numberCopy;
+					score_Kor=score_KorCopy;
+					score_Eng=score_EngCopy;
+					score_Math=score_MathCopy;
+					score_total=score_totalCopy;
+					score_avg=score_avgCopy;
+					
+				
+					
+					
+				} else {
+						System.out.println("없는 번호입니다");
+					}
+				System.out.println("학생 삭제 완료");
+				
+				
+			
+			
+		
 			} else if(select==5) {
 				//5.학생 정보 추가 -이름 번호 국어 영어 수학 입력후 출력
 				System.out.println("5. 학생 정보 추가");
 				System.out.println("추가할 학생의 정보를 입력해주세요");
 				int delete = sc.nextInt();
+				
 				
 				for(int i=0;i<nums;i++) {
 					if(number[i]==delete) {
