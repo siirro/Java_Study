@@ -79,6 +79,12 @@ public class Array_ex3_prac {
 				System.out.println("삭제할 학생의 번호를 입력하세요");
 				select=sc.nextInt();
 				
+				for(int i=0;i<num.length;i++) {
+					if(select==num[i]) {
+						
+					}
+				}
+				
 			} else if(select==5) {
 				//5.학생 정보 추가 -검색할 학생의 번호입력 -일치번호모든정보출력 -없으면없는번호입니다
 			} else if(select==6) {

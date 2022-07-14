@@ -126,13 +126,13 @@ public class Array_ex3 {
 							//index--;
 							continue;
 						}
-						nameCopy[index]=name[i];
-						numberCopy[index]=number[i];
-						score_KorCopy[index]=score_Kor[i];
-						score_EngCopy[index]=score_Eng[i];
-						score_MathCopy[index]=score_Math[i];
-						score_totalCopy[index]=score_total[i];
-						score_avgCopy[index]=score_avg[i];
+						nameCopy[index]=name[j];
+						numberCopy[index]=number[j];
+						score_KorCopy[index]=score_Kor[j];
+						score_EngCopy[index]=score_Eng[j];
+						score_MathCopy[index]=score_Math[j];
+						score_totalCopy[index]=score_total[j];
+						score_avgCopy[index]=score_avg[j];
 						index++;
 							
 					
